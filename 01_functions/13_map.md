@@ -1,4 +1,4 @@
-The next method we have is the `.map` method, and we use it to take a collection and transform all it's items and return a new collection.
+The next method we have is the `.map` method. We use it to take a collection and transform all of its items and return a new collection.
 
 ```dart
 void main() {
@@ -32,7 +32,7 @@ We got an error:
  A value of type 'Iterable<int>' can't be assigned to a variable of type 'List<int>'
 ```
 
-Thats because `.map` method return an `Iterable` not a list, to we need to convert it back to a `list` using the `.toList()` method:
+That's because the `.map` method returns an `Iterable`, not a list. We need to convert it back to a `list` using the `.toList()` method:
 
 ```dart
 void main() {

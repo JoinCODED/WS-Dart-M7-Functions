@@ -1,4 +1,4 @@
-Until now, we have learned and used named functions, but we can also declare anonymous functions, so let's see how:
+Until now, we've learned and used named functions. We can also declare anonymous functions. Let's see how:
 
 ```dart
 void main() {
@@ -8,7 +8,7 @@ void main() {
 }
 ```
 
-This function takes a `string` as an argument and returns a string, and the only difference between this function and the functions we wrote before is that this one has no name, but since it has no name, how can we use it?
+This function takes a `string` as an argument and returns a string. The only difference between this function and the functions we wrote before is that this one has no name, but since it has no name, how can we use it?
 
 We can assign this anonymous function to a variable:
 
@@ -20,9 +20,9 @@ print(sayHello("Salem"));
 }
 ```
 
-We created a variable that will store a reference to our anonymous function, and by calling this variable, we can call the anonymous function that we created.
+We created a variable that stores a reference to our anonymous function, and by calling this variable, we can call the anonymous function.
 
-The way we called our variable is different, we called with parenthesis, let's try to remove those parenthesis:
+The way we called our variable is different, we called it with parentheses. Let's try to remove those parentheses:
 
 ```dart
 void main() {
@@ -38,4 +38,4 @@ Output:
 Closure `main_closure`
 ```
 
-Closure is an another name of an anonymous function.
+Closure is another name of an anonymous function.

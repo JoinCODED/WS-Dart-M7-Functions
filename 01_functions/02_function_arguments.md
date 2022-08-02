@@ -8,7 +8,7 @@ void main() {
 }
 ```
 
-Suppose we want to do this print statement multiple times but with different variables, for example:
+Suppose we want to use the above print statement multiple times but with different variables, for example:
 
 ```dart
 void main() {
@@ -21,7 +21,7 @@ void main() {
 }
 ```
 
-We have code duplication, the two print statements are almost identical, this is our biggest indication that we need to use a function instead:
+We have code duplication. The two print statements are almost identical, this is our biggest indication that we need to use a function instead:
 
 ```dart
 void main() {
@@ -38,7 +38,7 @@ void whoAteBurger() {
 }
 ```
 
-After we declared a function, let's move our print statement inside the function body:
+Let's move our print statement inside the `whoAteBurger()` function body:
 
 ```dart
 void whoAteBurger() {
@@ -46,7 +46,7 @@ void whoAteBurger() {
 }
 ```
 
-Oops, we got two errors, the `name` and `burgers` are undefined, the reason is that we defined those variables in the main method, but this function `whoAteBurger` does not know about them, we need to find a way to pass those variables to our function.
+Oops! we got two errors, the `name` and `burgers` are undefined. The reason is that we defined those variables in the main method, but the `whoAteBurger` function doesn't know about them. We need to find a way to pass those variables to our function.
 
 First, we need to prepare our function to be ready to accept two arguments:
 
@@ -56,9 +56,9 @@ void whoAteBurger(String name, int burgers) {
 }
 ```
 
-Our errors went away, we declared two argument by writing their type and name, and we separate them by a comma.
+Our errors went away, we declared two arguments by writing their type and name, and we separate them by a comma.
 
-Now we can call our function in the main method and replace the print statements:
+Now, we can replace the print statements in the main function with our `whoAteBurger` function:
 
 ```dart
 void main() {
@@ -71,7 +71,7 @@ void main() {
 }
 ```
 
-We called our function and passed it the variables that it needs, which are `name` and `burger`. We can do the same for the other print statement:
+We called our function and passed the variables to it that it needs, which are `name` and `burger`. We can do the same for the other print statements:
 
 ```dart
 void main() {
@@ -88,10 +88,10 @@ Output:
 
 ```
 My name is Laila and I ate 25 burgers
-My name is Yanal and I ate 1 burgers
+My name is Yanal and I ate 1 burger
 ```
 
-So when we call `whoAteBurger` with `name` and `burger`, they are set as a function arguments:
+When we call `whoAteBurger` with `name` and `burger`, they are set as function arguments:
 
 ```dart
 void main() {
@@ -105,7 +105,7 @@ void whoAteBurger("Laila", 25) {
 }
 ```
 
-We got rid of the code duplication, but one other benefit is that if we want to update out print statement we can do it in one place instead of multiple places:
+We got rid of the code duplication, but one other benefit is that if we want to update our print statement we can do it in one place instead of multiple places:
 
 ```dart
 void whoAteBurger(String name, int burgers) {
@@ -113,9 +113,9 @@ void whoAteBurger(String name, int burgers) {
 }
 ```
 
-As you can see, this changed on both function calls, hence our code is more maintainable now.
+As you can see, it changed on both function calls, hence our code is more maintainable now.
 
-We can also pass the arguments directly without declaring a variables for them:
+We can also pass the arguments directly without declaring variables for them:
 
 ```dart
 void main() {
@@ -133,8 +133,8 @@ Output:
 
 ```
 My name is Laila and I would like to order 25 burgers
-My name is Yanal and I would like to order 1 burgers
+My name is Yanal and I would like to order 1 burger
 My name is Salem and I would like to order 5 burgers
 ```
 
-So you can pass variables, expressions or literals as long as they are in the correct type and order.
+You can pass variables, expressions, or literals as long as they are in the correct type and order.

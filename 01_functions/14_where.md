@@ -22,4 +22,4 @@ Output:
 (25, 20, 18, 30)
 ```
 
-The `where` method works just like `.map`, but we usually write a condition that if resolved to `true`, it will keep the element, and if resolved to `false`, it will discard the element.
+The `where` method works just like `.map`, but we usually write a condition that if evaluated to `true`, it will keep the element, and if evaluated to `false`, it will discard the element.

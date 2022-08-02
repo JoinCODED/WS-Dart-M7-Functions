@@ -1,4 +1,4 @@
-So far, we have declared our functions out side the main function, but dart also supports declaring functions within a function:
+So far, we've declared our functions outside the main function, but Dart also supports declaring functions within a function:
 
 ```dart
 void main() {
@@ -12,4 +12,4 @@ sum(5,6);
 }
 ```
 
-And now, `sum` and `main` share the variable `a`!, please note that `sum` here is called an `inner function`.
+Now, `sum` and `main` share the variable `a`. Please note that `sum` here is called an `inner function`.

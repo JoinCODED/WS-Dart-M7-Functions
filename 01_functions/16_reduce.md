@@ -8,8 +8,35 @@ void main() {
 }
 ```
 
-The way this code works, is that reduce takes the first element `1` and assigns it to the `number` variable and then combine this value with all other `element`s using the combine logic that we wrote after the `=>` `number + element`.
+The `reduce` method requires two arguments: The first one is called `total`, which is the initialValue, or the previously returned value of the function, and the second one is called `currentValue`, which is the value of the current element as shown below:
 
-It's not clear yet? let's get in the brain of dart:
+```dart
+array.reduce((total, currentValue) => `the logic that we want to apply`)
+```
 
-at the first call, `number` is assigned the value of `1` and element is the value of `2`, then the logic we wrote `number + element` will result to `3`, the `3` will be stored on the `value` variable and on the second iteration the `element` will be assigned to the next number of the list which is `3`, the logic will run again to sum `3` and `3` and store the result in `number` and assign `element` the next value, so at this point `number` is `6` and `element` is `4`, the last iteration happens and the final result will be `10`.
+In our example, the **total** (number) in the `reduce` method will be 0. The **currentValue** (element) will take the first element in the list, which is `1`. Then, the `number` and `element` will be combined , and the result will be `1`.
+
+```dart
+numbers.reduce((0, 1)=> 0 + 1) //  the returned value is 1
+```
+
+It's not clear yet? let's get into their brain of Dart:
+
+At the first call, the first argument `number`, which represents the initial value of `reduce`, will be 0 by default if we don't assign a value to it.
+The second argument `element`, which represents the `currentValue`, will be assigned to 1.
+Then, the `reduce` method will apply an operation to them based on the logic we set, which, in our case, is addition.
+The result of this iteration will be 1, and it will be stored in `number`.
+
+In the next iteration, `number` will be 1, and `element` will take the second element in the list, which is 2. The two values will be combined, and result in 3, which will be stored in `number`.
+
+```dart
+numbers.reduce((1, 2)=> 1 + 2) //  the returned value is 3
+```
+
+Then, `number` will be 3, and `element` will take the third element in the list, which is 3. The two values will be combined, they will result in 6, and will be stored in `number` again.
+
+```dart
+numbers.reduce((3, 3)=> 3 + 3) //  the returned value is 6
+```
+
+The final iteration will happen, and the result will be 10.

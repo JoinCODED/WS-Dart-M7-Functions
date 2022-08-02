@@ -10,7 +10,7 @@ String whoAteBurger(String name, [int burgers = 0]) {
 }
 ```
 
-We can also separate our argument so some of them are positional and some are named:
+We can also separate our arguments so that some of them are positional and some are named:
 
 ```dart
 void main() {
