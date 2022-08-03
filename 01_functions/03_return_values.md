@@ -10,11 +10,11 @@ void whoAteBurger(String name, int burgers) {
 }
 ```
 
-The function we created does one thing, prints a statement, but we also can create functions that returns a value.
+The function we created does one thing, prints a statement, but we also can create functions that return a value.
 
-Let's modify our function to return the string instead of printing it so we can do other things with this string.
+Let's modify our function to return the string instead of printing it.
 
-Right now, we have the `void` keyword in front of our function name, which means that this function does not return anything, so let's change it to `String` because we will return a string!
+Right now, we have the `void` keyword just before our function name, which means that this function does not return anything. Let's change it to `String` because we will make it return a string!
 
 ```dart
 void main() {
@@ -26,7 +26,7 @@ String whoAteBurger(String name, int burgers) {
 }
 ```
 
-As soon as we changed it we got an error, because we told dart this function will return a `String` but we did not return anything just yet. Let's add a return statement:
+As soon as we changed it, we got an error because we told Dart this function will return a `String`, but we did not return anything just yet. Let's add a return statement:
 
 ```dart
 String whoAteBurger(String name, int burgers) {
@@ -34,14 +34,14 @@ String whoAteBurger(String name, int burgers) {
 }
 ```
 
-Now, this function returns a string, but we are not using it, and if we run the code, we will get nothing printed.
+Now, this function returns a string, but we are not using it. If we run the code, we will get nothing printed.
 
-In order to use the returned value:
+We can use the returned value as follows:
 
 ```dart
 void main() {
     final angryOrder = whoAteBurger("Salem", 5);
-    print(order.toUpperCase());
+    print(angryOrder.toUpperCase());
 }
 ```
 

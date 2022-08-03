@@ -1,4 +1,4 @@
-Named arguments by default are not required unlike positional arguments, this is why you got an error with this code:
+Named arguments are required by default unlike positional arguments, this is why you got an error with this code:
 
 ```dart
 void main() {
@@ -10,11 +10,11 @@ String whoAteBurger({String name, int burgers}) {
 }
 ```
 
-And the error tells you that the argument `name` and `burgers` can't be `null`.
+The error tells us that the arguments `name` and `burgers` can't be `null`.
 
 To solve this, we have 3 possible options:
 
-1. Declare nullable types, by adding a question mark after each argument as we learned before:
+1. Declare nullable types by adding a question mark after each argument as we learned before:
 
 ```dart
 void main() {
@@ -26,9 +26,9 @@ String whoAteBurger({String? name, int? burgers}) {
 }
 ```
 
-But this doesn't seem like a good solution, we don't want our function to run if it doesn't have all arguments it needs.
+But this doesn't seem like a good solution, we don't want our function to run if it doesn't have all needed arguments.
 
-2. Use default values, by providing default values, they replace the passed argument if it was `null`.
+1. Use default values. Default values replace the passed argument if it's `null`.
 
 ```dart
 void main() {
@@ -46,9 +46,9 @@ Because we omitted the `burgers` argument, it will resolve to 0 by default and w
 My name is Salem and I would like to order 0 burgers
 ```
 
-So you can use default values if the arguments are optional, but what if our code can't run without all arguments provided?
+You can use default values if the arguments are optional, but what if our code can't run without all arguments provided?
 
-3. Mark arguments as **required**, by adding the required keyword before the argument, dart will make sure to not compile unless you provided it with the correct arguments:
+3. Mark arguments as **required**. By adding the required keyword before each argument, Dart will make sure not to compile unless you provide it with the correct arguments:
 
 ```dart
 void main() {

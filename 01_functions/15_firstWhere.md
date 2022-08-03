@@ -1,4 +1,4 @@
-The `firstWhere` method is used to find an element within a list and it works just like `where`, but it will only return the first element that matches the condition:
+The `firstWhere` method is used to find an element within a list, and it works just like `where`, but it only returns the first element that matches the condition:
 
 ```dart
 void main() {
@@ -30,7 +30,7 @@ Output:
 Omar
 ```
 
-We can add a second argument to the `firstWhere` method that gets executed if we didn't find any item that matches the condition:
+We can add a second argument to the `firstWhere` method that gets executed if we don't find any item that matches the condition:
 
 ```dart
 void main() {

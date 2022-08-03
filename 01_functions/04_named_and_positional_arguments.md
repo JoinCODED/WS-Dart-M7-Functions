@@ -1,4 +1,6 @@
-Their are two different ways of declaring function arguments, the first one we used was with `positional arguments`, and the way positional arguments works, is that we declare them within the parenthesis and when we call the function, dart knows that the first argument passed will be `name` and the second argument will be `burgers`.
+There are two different ways of declaring function arguments. The first one we used was with `positional arguments`. The way positional arguments work is by declaring the arguments between the parentheses.
+
+When we call the `whoAteBurger` function, Dart knows that the first argument passed will be `name` and the second argument will be `burgers`.
 
 ```dart
 void main() {
@@ -10,13 +12,13 @@ String whoAteBurger(String name, int burgers) {
 }
 ```
 
-Each argument is identified by it's position within the parenthesis.
+Each argument is identified by its position between the parentheses.
 
-This function only has two arguments, but what if we have 8 or 10 arguments, it will be a hassle to memorize all the positions to be able to pass the arguments correctly, and this is were named arguments came in handy.
+This function only has two arguments. However, what if we have 8 or 10 arguments? It will be a hassle to memorize all the positions to be able to pass the arguments correctly, and this is were named arguments came in handy.
 
-So how do named arguments work?
+How do named arguments work?
 
-To define a named argument we simply wrap our arguments in a set of curly braces:
+To define a named argument, we simply wrap our arguments in curly braces:
 
 ```dart
 void main() {
@@ -28,7 +30,7 @@ String whoAteBurger({String name, int burgers}) {
 }
 ```
 
-We got an error, because we passed positional arguments to our function that expects named arguments. to fix this by adding the name of the argument before each value:
+We got an error because we passed positional arguments to our function that expects named arguments. To fix this, we have to add the name of the argument before each value:
 
 ```dart
 void main() {
@@ -40,7 +42,7 @@ String whoAteBurger({String name, int burgers}) {
 }
 ```
 
-And now we can position our argument the way we want and it will still work, for example:
+Now, we can position our argument the way we want and it will still work, for example:
 
 ```dart
 void main() {
@@ -51,5 +53,7 @@ String whoAteBurger({String name, int burgers}) {
    return "My name is $name and I would like to order $burgers burgers";
 }
 ```
+
+<!-- You said that the code will work above, then, you tell them that we got error? This will frustrate the students and they won't trust you anymore 😛 -->
 
 Hmm, we got an error, let's fix it in the next lesson.

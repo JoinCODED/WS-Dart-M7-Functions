@@ -1,8 +1,8 @@
-Functions are the way to organize our code and make it more reuseable.
+Functions are a way to organize our code and make it reusable.
 
-So far, we have been adding our code in the main method, but as our code goes larger, we want to organize our code and break it into smaller blocks.
+So far, we have been adding our code in the primary method, but as our code gets larger, we want to organize it and break it into smaller blocks.
 
-Just like we used variables to store values and reference them multiple times, we can use functions to encapsulate a block of code and reuse multiple times.
+Just like we used variables to store values and reference them multiple times, we can use functions to encapsulate a block of code and reuse it multiple times.
 
 Let's create our first function:
 
@@ -17,9 +17,9 @@ void helloWorld() {
 }
 ```
 
-In the code above, we declared our main function, we started by declaring the return type (more on that later), then the function name `helloWorld` a set of parenthesis and a set of curly braces, and within the curly braces is what we call a function body, where we write all the code we want to execute when this function is called.
+In the code above, we declared our main function. we created another function by declaring the return type (more on that later), the function name `helloWorld`, a parenthesis, and curly braces. Between the curly braces is what we call a function body, where we write all the code we want to execute when this function is called.
 
-Let's call our function in the main method by typing it's name and a set of parenthesis:
+Let's call our function in the main method by typing its name and parentheses:
 
 ```dart
 void main() {
@@ -62,4 +62,4 @@ Hello World!
 My first function
 ```
 
-We defined a simple function with a set of instruction, in our case they are print statements, and whenever we call our function, those set of functions will be executed.
+We defined a simple function with a set of instructions, which are print statements. Those print statements will be executed whenever we call our function `helloWorld()`.
