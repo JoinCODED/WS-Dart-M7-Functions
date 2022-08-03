@@ -17,7 +17,7 @@ void helloWorld() {
 }
 ```
 
-In the code above, we declared our main function. we created another function by declaring the return type (more on that later), the function name `helloWorld`, a parenthesis, and curly braces. Between the curly braces is what we call a function body, where we write all the code we want to execute when this function is called.
+In the code above, we declared our main function. we created another function by declaring the return type (more on that later), the function name `helloWorld`, parentheses, and curly braces. Between the curly braces is what we call a function body, where we write all the code we want to execute when this function is called.
 
 Let's call our function in the main method by typing its name and parentheses:
 
